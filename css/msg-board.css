@@ -1,0 +1,11 @@
+#msg-board-section {
+    min-height: 100vh;
+}
+
+#messages-section {
+    height: 60ch;
+    width: 60ch;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}

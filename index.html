@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/section.css">
+        <link rel="stylesheet" href="css/switch-btn.css">
+        <link rel="stylesheet" href="css/msg-board.css">
+        <title>JS Exercises</title>
+    </head>
+    <body>
+        <header id="nav-header">
+            <nav id="navbar">
+                <div class="content-area">
+                    <div class="flexbox parent">
+                        <div class="logo">LOGO</div>
+                        <ul class="menu">
+                            <li><a href="#nav-header">Home</a></li>
+                            <li><a href="#switch-btn-section">Switch</a></li>
+                            <li><a href="#rng-img-btn-section">RNG Img</a></li>
+                            <li><a href="#change-heading-section">Change H1</a></li>
+                            <li><a href="#msg-board-section">Msg Board</a></li>
+                            <li><a href="#upload-img-section">Upload Img</a></li>    
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="switch-btn-section" class="section">
+            <div class="content-area">
+                <div class="flexbox">
+                    <div class="left-column">
+                        <header>
+                            <h1>A Switch Button!</h1>
+                        </header>
+                        <p>Toggle the switch:</p>
+                    </div>
+                    <button id="switch-btn" onclick="switchBtn()">OFF</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="decoration spacer">&nbsp;</div>
+
+        <section id="rng-img-btn-section" class="section">
+            <div class="content-area">
+                <div class="flexbox">
+                    <div class="left-column">
+                        <header>
+                            <h1>Random Image!</h1>
+                        </header>
+                        <p>Press the button to change the image:</p>
+                        <button id="change-img-btn" onclick="reloadImg()">Change Image</button>
+                    </div>
+                    <!-- <img id="rngImg" src="https://unsplash.it/500/300"> -->
+                </div>
+            </div>
+        </section>
+
+        <div class="decoration spacer">&nbsp;</div>
+
+        <section id="change-heading-section" class="section">
+            <div class="content-area">
+                <div class="flexbox">
+                    <div class="left-column">
+                        <header>
+                            <h1 id="myHeading">Change Me!</h1>
+                        </header>
+                        <form id="myForm">
+                            <label for="headingText">Click the button to change the heading:</label>
+                            <input type="text" id="headingText">
+                            <button id="changeBtn">Change Heading</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="decoration spacer">&nbsp;</div>
+
+        <section id="msg-board-section" class="section">
+            <div class="content-area">
+                <div class="flexbox">
+                    <div class="left-column">
+                        <header>
+                            <h1>Message Board</h1>
+                        </header>
+                        <form id="msg-board-form">
+                            <label for="msg-input-field">Add a new Message:</label>
+                            <br>
+                            <input type="text" id="msg-input-field">
+                            <br>
+                            <button id="msg-board-btn">Post Message</button>
+                        </form>
+                        <button id="del-msg-btn">Delete Message</button>
+                    </div>
+                    <div class="right-column">
+                        <section id="messages-section">
+                            <!-- messages (<p> elements) are added here via JS -->
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="decoration spacer">&nbsp;</div>
+
+        <section id="upload-img-section" class="section">
+            <div class="content-area">
+                <div class="flexbox">
+                    <div class="left-column">
+                        <header>
+                            <h1>Upload an Image!</h1>
+                        </header>
+                        <form id="upload-img-form">
+                            <label for="fileInput">Upload an Image:</label>
+                            <input type="file" id="fileInput">
+                            <button id="img-upload-btn">UPLOAD</button>
+                        </form>
+                    </div>
+                    <div id="img-container">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./js/switch-btn.js"></script>
+        <script src="./js/rng-img.js"></script>
+        <script src="./js/change-h.js"></script>
+        <script src="./js/msg-board.js"></script>
+        <script src="./js/upload-img.js"></script>
+        <!-- <script src="./js/upload-img-original.js"></script> -->
+    </body>
+</html>
